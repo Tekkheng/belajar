@@ -1,0 +1,53 @@
+git config --list  -> cek nama dan email git
+git config --local user.name "" -> setnama git pada satu repofolderlocal saja
+git config --local user.email "" -> setemail git pada satu repofolderlocal saja
+git config --global user.name ""  -> setnama git pada semua repofolderlocal
+git config --global user.email "" -> setemail git pada semua repofolderlocal
+===================================================================================
+mkdir namaprojectrepo   -> Bikin repolocal
+git init -> inisialisasi repo 
+===================================================================================
+git log -> history
+git log -3	->check 3 history terakhir
+git log style.css ->check history perubahan file tertentu
+===================================================================================
+clear -> 'cls'
+===================================================================================
+git add namafile -> satu file
+git add . -> untuk banyak file	-> add to staged area
+===================================================================================
+git restore --staged namafile / git rm --cached namafile -> balikin dari stagedarea ke tempat asal
+git status -> cek status
+git log --all --decorate --oneline --graph -> list git branch detail
+alias graph="git log --all --decorate --oneline --graph" -> membuat alias
+===================================================================================
+git commit -m 'pesan'
+git commit -am 'pesan'  -> a = git add ->hanya dipakai ketika modified tidak untuk untrack
+git checkout 5 huruf commit saat membuat file tersebut -- namafile  -> masuk kembali keposisi file yg terhapus
+===================================================================================
+git branch -> list branch
+git branch namabranch -> membuat branch
+git checkout namabranch -> pindah branch atau pindah posisi 
+===================================================================================
+jika berada di repo master
+git merge namabranchlain  -> untuk menggabungkan branch secara oneway
+
+git branch --merged -> history yang baru saja sudah di merge
+git branch -d namabranch -> untuk hapus
+git branch -D namabranch -> untuk hapus yg belum di merge
+ 
+git checkout 7 huruf commit -> pada history graph tinggal pilih ingin kembali ke masa mana 
+kemudian bikin branch baru disana dengan git branch namabranch lalu git checkout namabranch 
+===================================================================================
+remote(mengambil repo github ke local git):
+git clone linkrepopadagithub
+git remote -v ->melihat detail origin
+===================================================================================
+git push -> update perubahan repogit ke repogithub
+===================================================================================
+remote(menaruh repolocal git ke github):
+-bikin dulu repo localgit lalu di init 
+-lalu bikin repo di github dengan nama yg sama dengan repo localgit, jangan ceklis readme
+kemudian :
+git remote add origin https://github.com/Tekkheng/tesrepobarulocal.git
+git push -u origin Akheng
