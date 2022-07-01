@@ -51,3 +51,6 @@ remote(menaruh repolocal git ke github):
 kemudian :
 git remote add origin https://github.com/Tekkheng/tesrepobarulocal.git
 git push -u origin namabranch
+===================================================================================
+git fetch -> melihat udah sampai mana repo yg diremote
+git pull -> mengambil perubahan terbaru di github ke git yg bikin konflik
