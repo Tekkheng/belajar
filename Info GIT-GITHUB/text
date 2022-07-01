@@ -50,4 +50,4 @@ remote(menaruh repolocal git ke github):
 -lalu bikin repo di github dengan nama yg sama dengan repo localgit, jangan ceklis readme
 kemudian :
 git remote add origin https://github.com/Tekkheng/tesrepobarulocal.git
-git push -u origin Akheng
+git push -u origin namabranch
