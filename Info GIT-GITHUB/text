@@ -35,7 +35,7 @@ git merge namabranchlain  -> untuk menggabungkan branch secara oneway
 git branch --merged -> history yang baru saja sudah di merge
 git branch -d namabranch -> untuk hapus
 git branch -D namabranch -> untuk hapus yg belum di merge
- 
+
 git checkout 7 huruf commit -> pada history graph tinggal pilih ingin kembali ke masa mana 
 kemudian bikin branch baru disana dengan git branch namabranch lalu git checkout namabranch 
 ===================================================================================
