@@ -38,6 +38,26 @@ function kliksaya() {
 const sectA = document.getElementById("a");
 sectA.removeAttribute("class", "article");
 
+const konek = document.querySelector("section#a p");
+
+konek.addEventListener("dblclick", function () {
+  const parentb = document.querySelector("section#b ul");
+  const li5 = parentb.querySelector("li:nth-child(4)");
+
+  const creates = document.createElement("li");
+  const isicreates = document.createTextNode("akheng");
+  creates.appendChild(isicreates);
+  parentb.replaceChild(creates, li5);
+  console.log(parentb);
+});
+
+const parent = document.querySelector("section#b ul");
+const li = parent.querySelector("li:nth-child(2)");
+const build2 = document.createElement("span");
+const isibuild2 = document.createTextNode("Akheng_Gaming");
+build2.appendChild(isibuild2);
+li.after(build2);
+
 // Catatan
 // =================================================================
 // var,let,const cth
@@ -72,6 +92,24 @@ sectA.removeAttribute("class", "article");
 // createElement("h4");
 // createTextNode("isi dari h4");
 // .appendChild();
+// .insertBefore(insert,before);
+// .removeChild();
+// .replaceChild(databaru,datalama);
+// ==================================================================
+// ==================================================================
+// Event :
+// cara lama :
+// onclick,onchange
+//  const p2 = document.getElementById('a');
+//  p2.onclick = ubahwarna;
+//  p2.onclick = ubahwarna(){
+//   p2.style.backgroundColor = "red";
+//  };
+// cara baru :
+// element.addEventListener("click", kliksaya);
+// element.addEventListener("click", function nama(){
+//   alert('tes');
+// });
 // .insertBefore(insert,before);
 // .removeChild();
 // .replaceChild(databaru,datalama);
