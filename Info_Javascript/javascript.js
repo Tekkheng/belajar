@@ -114,3 +114,25 @@ li.after(build2);
 // .removeChild();
 // .replaceChild(databaru,datalama);
 // ==================================================================
+
+const tes = document.createElement("section");
+tes.setAttribute("id", "2");
+const div = document.querySelector("section#b");
+div.after(tes);
+
+const div2 = document.getElementById("2");
+const input = document.createElement("input");
+input.setAttribute("type", "text");
+div2.appendChild(input);
+
+const button = document.querySelector("a");
+button.addEventListener("click", valid);
+function valid() {
+  if (input.value.length <= 5 && input.value.length > 0) {
+    alert("tersubmit ");
+  } else if (input.value.length > 5) {
+    alert("huruf maksimal 5");
+  } else {
+    alert("Data kosong");
+  }
+}

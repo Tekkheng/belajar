@@ -54,3 +54,8 @@ git push -u origin namabranch
 ===================================================================================
 git fetch -> melihat udah sampai mana repo yg diremote
 git pull -> mengambil perubahan terbaru di github ke git yg bikin konflik
+
+-------------------
+touch namafile
+touch index.html
+-------------------
