@@ -105,12 +105,13 @@ function animasi() {
       i = 0;
     }
     ubahgambarbot.setAttribute("src", "img/" + animasigambar[i++] + ".png");
-  }, 200);
+  }, 150);
 }
+
 function animasihasil() {
   domparenthasil = document.querySelectorAll("div")[1];
   domhasil = domparenthasil.querySelector("span p");
-  animasihasil = ["You Lose", "You Win", "Draw"];
+  hasilanimasi = ["You Lose", "You Win", "Draw"];
   let i = 0;
   getWaktu = new Date().getTime();
   setInterval(function () {
@@ -118,9 +119,9 @@ function animasihasil() {
       clearInterval;
       return;
     }
-    if (i == animasihasil.length) {
+    if (i == hasilanimasi.length) {
       i = 0;
     }
-    domhasil.innerText = animasihasil[i++];
+    domhasil.innerText = hasilanimasi[i++];
   }, 200);
 }
