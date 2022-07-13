@@ -21,6 +21,15 @@
 //         "Hasil : " +
 //         result
 //     );
+//     if (result == "You Win") {
+//       alert("Menang Yak ges yak");
+//     } else if (result == "You Lose") {
+//       alert("coba lagi lainkali yak!");
+//     } else if (result == "Seri!") {
+//       alert("SERI WOI");
+//     } else {
+//       alert("ok");
+//     }
 //     lagi = confirm("main lagi ? OK or Cancel ?");
 //   }
 
